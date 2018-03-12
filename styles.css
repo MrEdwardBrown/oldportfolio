@@ -3,6 +3,59 @@ body {
 	font-weight: 600;
 }
 
+#loader-wrapper {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #592673;
+
+    transition: 0.5s ease-in opacity;
+}
+
+#loader-wrapper .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: fade;
+}
+
+#loader-wrapper .image-wrapper:first-child {
+    animation-direction: alternate;
+}
+
+#loader-wrapper .image-wrapper:last-child {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#loader-wrapper .image-wrapper img {
+    width: 50vw;
+}
+
 #hero {
     position: fixed;
     top: 0;

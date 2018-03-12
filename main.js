@@ -11,3 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
         social.style.opacity = (1 - progress) * (1 - progress);
     });
 });
+
+window.onload = function() {
+    var loader = document.getElementById('loader-wrapper');
+    loader.style.opacity = "0";
+    setTimeout(function() {
+        loader.style.display = "none";
+    }, 500);
+};
