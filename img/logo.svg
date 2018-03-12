@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 785 386">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Just_Triangles);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-width: 30px;
+      }
+
+      .cls-2 {
+        stroke: #535353;
+      }
+
+      .cls-3 {
+        stroke: #303030;
+      }
+
+      .cls-4 {
+        stroke: #444;
+      }
+    </style>
+    <clipPath id="clip-Just_Triangles">
+      <rect width="785" height="386"/>
+    </clipPath>
+  </defs>
+  <g id="Just_Triangles" data-name="Just Triangles" class="cls-1">
+    <g id="Group_2" data-name="Group 2" transform="translate(-1305.4 -2959.7)">
+      <path id="Path_1" data-name="Path 1" class="cls-2" d="M335.447,320.139l109.9,162H7.51Z" transform="translate(1589.55 2812.061)"/>
+      <g id="Group_1" data-name="Group 1" transform="translate(1361.3 3012.2)">
+        <path id="Path_2" data-name="Path 2" class="cls-3" d="M183.791,251.43l261.463,239H8.3Z" transform="translate(-8.3 -208.43)"/>
+        <path id="Path_3" data-name="Path 3" class="cls-4" d="M317.281,213.2l62.042,136,65.587,146H7.957Z" transform="translate(85.993 -213.2)"/>
+      </g>
+    </g>
+  </g>
+</svg>
