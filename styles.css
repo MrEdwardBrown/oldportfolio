@@ -1,0 +1,128 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+#hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transform-origin: center;
+    transform: scale(1.03);
+
+    /*
+     * Change the url below to change the hero image
+     */
+    background: white url("./img/green_bird.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#social .left, #social .right {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding-right: 1%;
+	padding-top: 0.3%;
+}
+
+#social .left {
+    left: 0;
+	padding-left: 1%;
+	padding-top: 0.3%;
+}
+
+#social .left a {
+    color: #333333;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+}
+
+#social .left a:hover {
+    color: #EEEEEE;
+}
+
+#social .right {
+    right: 0;
+
+}
+
+#social .right a {
+    margin: 20px 20px 20px 0;
+}
+
+#social .right a:not(.icon) {
+	padding-bottom: 5px;
+	color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+	display: none;
+}
+
+@media (max-width: 768px) {
+    #social .right a:not(.icon) {
+	display: inline-block;
+	}
+	#social .left a:not(.icon) {
+	display: none;
+	}
+}
+
+#social .right a:not(.icon):hover {
+	color: #EEEEEE;
+}
+
+#social .right a.icon {
+    width: 20px;
+}
+
+#social .right a.icon svg {
+    fill: #333333;
+    transition: fill 0.1s ease-in;
+}
+
+#social .right a.icon svg:hover {
+    fill: #EEEEEE;
+}
+
+#content {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    font-size:0;
+}
+
+.item {
+    height: 0;
+    padding: 0; /* remove any pre-existing padding, just in case */
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.item.full {
+    width: 100%;
+}
+
+.item.half {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .item.half {
+        width: 100%;
+    }
+}
