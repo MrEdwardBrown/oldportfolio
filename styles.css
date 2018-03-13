@@ -121,26 +121,14 @@ body {
     width: 50%;
 }
 
-@media (max-width: 768px) {
-    .item.half {
-        width: 100%;
-    }
-}
-
 #contact {
 	font-family: 'Montserrat', sans-serif;
 	color: #FFFFFF;
 	padding-left: 10vw;
-	position: absolute;
-	z-index: 0;
-	overflow:hidden;
-	
-}
-
-#contact .bg {
-	z-index: -1;
-	filter: brightness(0.5);
-
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-position: top center;
 }
 
 #contact .header {
@@ -157,14 +145,6 @@ body {
 	line-height: 1.5;
 }
 
-#contact, .bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -179,3 +159,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #333; 
 }
+
+@media (max-width: 768px) {
+    .item.half {
+        width: 100%;
+    }
+	
+	#contact .header {
+		font-size: 50pt;
+	}
+	
+	#contact .links {
+		max-width: 80vw;
+	}
+}
+
