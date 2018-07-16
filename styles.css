@@ -123,12 +123,12 @@ body {
 
 #contact {
 	font-family: 'Montserrat', sans-serif;
-	color: #FFFFFF;
-	padding-left: 10vw;
+    color: #FFFFFF;
+    padding-left: 8vw;
 	background-image: url(img/bg.jpg);
 	background-size: cover;
 	height: 100vh;
-	background-position: top center;
+    background-position: top center;
 }
 
 #contact .header {
@@ -139,8 +139,7 @@ body {
 
 #contact .links {
 	font-weight: 300;
-	font-style: italic;
-	font-size: 20pt;
+	font-size: 18pt;
 	padding-top: 3vh;
 	line-height: 1.5;
 }
